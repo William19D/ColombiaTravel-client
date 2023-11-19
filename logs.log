@@ -1,0 +1,6 @@
+Nov 19, 2023 3:31:21 PM co.edu.uniquindio.agencia.model.AgenciaViajes inicializarLogger
+INFO: INICIO ARCHIVO LOG COLOMBIA TRAVEL.
+Nov 19, 2023 3:31:21 PM co.edu.uniquindio.agencia.model.AgenciaViajes <init>
+INFO: Se crea una nueva instancia de Colombia Travel
+Nov 19, 2023 3:31:22 PM co.edu.uniquindio.agencia.model.AgenciaViajes inicializarDestinosTest
+INFO: No se han cargado los datos ya que ya se tiene informacion 

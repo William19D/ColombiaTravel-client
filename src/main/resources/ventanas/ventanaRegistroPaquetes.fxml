@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ventanaPaquetes" maxHeight="720.0" maxWidth="1280.0" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: F1F3E5;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.agencia.controller.VentanaRegistroPaquetes">
+    <children>
+        <ImageView fx:id="btnVolver" fitHeight="77.0" fitWidth="164.0" layoutX="28.0" layoutY="635.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../iconos/volver.png" />
+            </image>
+        </ImageView>
+        <GridPane layoutX="28.0" layoutY="196.0" prefHeight="341.0" prefWidth="476.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="339.0" minWidth="10.0" prefWidth="263.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="30.0" prefWidth="213.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="20.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label style="-fx-font-size: 23;" styleClass="textoRegular" stylesheets="@styles.css" text="Nombre:">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label style="-fx-font-size: 23;" styleClass="textoRegular" stylesheets="@styles.css" text="Descripción:" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label style="-fx-font-size: 23;" styleClass="textoRegular" stylesheets="@styles.css" text="Servivios adicionales:" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtNombre" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="152.0" promptText="Ingrese el nombre" style="-fx-background-radius: 100; -fx-border-radius: 100;" styleClass="textoLight" stylesheets="@styles.css" GridPane.columnIndex="1">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                </TextField>
+                <TextField fx:id="txtServicios" prefHeight="18.0" prefWidth="74.0" promptText="Ingrese la Experiencia" style="-fx-background-radius: 100; -fx-border-radius: 100;" styleClass="textoLight" stylesheets="@styles.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <TextField fx:id="txtDescripcion" promptText="Ingrese la identificacion" style="-fx-background-radius: 100; -fx-border-radius: 100;" styleClass="textoLight" stylesheets="@styles.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Label style="-fx-font-size: 23;" styleClass="textoRegular" stylesheets="@styles.css" text="Precio:" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label style="-fx-font-size: 23;" styleClass="textoRegular" stylesheets="@styles.css" text="Cupo max personas:" GridPane.rowIndex="4">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label style="-fx-font-size: 23;" styleClass="textoRegular" stylesheets="@styles.css" text="Fecha inicio:" GridPane.rowIndex="5">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtPrecio" prefHeight="25.0" prefWidth="279.0" promptText="ingrese el precio" style="-fx-background-radius: 100; -fx-border-radius: 100;" styleClass="textoLight" stylesheets="@styles.css" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <TextField fx:id="txtCupoMax" promptText="ingrese cupo maximo de personas" style="-fx-background-radius: 100; -fx-border-radius: 100;" styleClass="textoLight" stylesheets="@styles.css" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <DatePicker fx:id="dateInicio" prefHeight="25.0" prefWidth="223.0" style="-fx-background-radius: 100; -fx-border-radius: 100;" styleClass="textoLight" stylesheets="@styles.css" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <DatePicker fx:id="dateFinal" prefHeight="25.0" prefWidth="228.0" style="-fx-background-radius: 100; -fx-border-radius: 100;" styleClass="textoLight" stylesheets="@styles.css" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label style="-fx-font-size: 23;" styleClass="textoRegular" stylesheets="@styles.css" text="Fecha final:" GridPane.rowIndex="6">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            </children>
+        </GridPane>
+        <Button fx:id="btnRegistrarPaquete" layoutX="280.0" layoutY="592.0" mnemonicParsing="false" onAction="#registrarPaqueteEvent" style="-fx-font-size: 25;" stylesheets="@styles.css" text="Registrar">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <styleClass>
+                <String fx:value="botonBlanco28px" />
+                <String fx:value="textoRegular" />
+            </styleClass>
+        </Button>
+        <Label layoutX="28.0" layoutY="144.0" style="-fx-font-size: 31;" styleClass="textoNegrita" stylesheets="@styles.css" text="Registro de Paquetes Turisticos">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnActualizar" layoutX="953.0" layoutY="597.0" mnemonicParsing="false" onAction="#actualizarEvent" style="-fx-font-size: 20;" stylesheets="@styles.css" text="Actualizar">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <styleClass>
+                <String fx:value="botonBlanco28px" />
+                <String fx:value="textoRegular" />
+            </styleClass>
+        </Button>
+        <Button fx:id="btnEliminar" layoutX="1131.0" layoutY="597.0" mnemonicParsing="false" onAction="#eliminarEvent" style="-fx-font-size: 20;" stylesheets="@styles.css" text="Eliminar">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <styleClass>
+                <String fx:value="botonBlanco28px" />
+                <String fx:value="textoRegular" />
+            </styleClass>
+        </Button>
+        <Button fx:id="btnVolverMenuAdmins" layoutX="25.0" layoutY="635.0" mnemonicParsing="false" onAction="#volverMenuAdmins" prefHeight="77.0" prefWidth="84.0" stylesheets="@styles.css">
+            <font>
+                <Font size="24.0" />
+            </font>
+            <styleClass>
+                <String fx:value="textoLight" />
+                <String fx:value="botonClick" />
+            </styleClass>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <ImageView fitHeight="276.0" fitWidth="492.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../imagenes/colombiaTravelHorizontal.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="547.0" layoutY="355.0" prefHeight="43.0" prefWidth="328.0" style="-fx-font-size: 30;" styleClass="textoNegrita" stylesheets="@styles.css" text="Destinos Agregados">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="547.0" layoutY="52.0" prefHeight="43.0" prefWidth="339.0" style="-fx-font-size: 30;" styleClass="textoNegrita" stylesheets="@styles.css" text="Destinos Disponibles">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tableDestinosAgregados" layoutX="547.0" layoutY="398.0" prefHeight="251.0" prefWidth="339.0">
+            <columns>
+                <TableColumn fx:id="columNombreAgregado" prefWidth="92.0" text="Nombre" />
+                <TableColumn fx:id="columnCiudadAgregado" prefWidth="140.0" text="Ciudad" />
+                <TableColumn fx:id="columnClimaAgregado" prefWidth="90.0" text="Clima" />
+            </columns>
+        </TableView>
+        <GridPane layoutX="892.0" layoutY="314.0" prefHeight="125.0" prefWidth="61.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <ImageView fitHeight="54.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../iconos/flecha.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="51.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" style="-fx-rotate: 180;" GridPane.rowIndex="1">
+                    <image>
+                        <Image url="@../iconos/flecha.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="eliminarEleccion" mnemonicParsing="false" onAction="#eliminarEleccion" prefHeight="55.0" prefWidth="52.0" style="-fx-border-radius: 200; -fx-background-color: transparent; -fx-background-radius: 200;">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Button fx:id="agregarEleccion" mnemonicParsing="false" onAction="#agregarEleccion" prefHeight="55.0" prefWidth="52.0" style="-fx-border-radius: 200; -fx-background-color: transparent; -fx-background-radius: 200;" GridPane.rowIndex="1">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+            </children>
+        </GridPane>
+        <TableView fx:id="tablePaquetesRegistrados" layoutX="953.0" layoutY="98.0" prefHeight="475.0" prefWidth="291.0">
+            <columns>
+                <TableColumn fx:id="columNombrePaquete" prefWidth="117.0" text="Nombre" />
+                <TableColumn fx:id="columnCupoPaquete" minWidth="0.0" prefWidth="44.0" text="Cupo" />
+                <TableColumn fx:id="columnPrecioPaquete" prefWidth="133.0" text="Precio" />
+            </columns>
+        </TableView>
+        <Label layoutX="953.0" layoutY="52.0" prefHeight="43.0" prefWidth="328.0" style="-fx-font-size: 30;" styleClass="textoNegrita" stylesheets="@styles.css" text="Paquetes Actuales">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tableDestinosDisponibles" layoutX="547.0" layoutY="98.0" prefHeight="251.0" prefWidth="339.0">
+            <columns>
+                <TableColumn fx:id="columNombreDisp" prefWidth="92.0" text="Nombre" />
+                <TableColumn fx:id="columnCiudadDisp" prefWidth="140.0" text="Ciudad" />
+                <TableColumn fx:id="columnClimaDisp" prefWidth="90.0" text="Clima" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
