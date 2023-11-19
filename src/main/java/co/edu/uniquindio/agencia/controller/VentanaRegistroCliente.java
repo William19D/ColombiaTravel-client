@@ -5,6 +5,7 @@ import co.edu.uniquindio.agencia.exceptions.AtributoVacioException;
 import co.edu.uniquindio.agencia.exceptions.DestinoRepetidoException;
 import co.edu.uniquindio.agencia.exceptions.InformacionRepetidaException;
 import co.edu.uniquindio.agencia.exceptions.RutaInvalidaException;
+import co.edu.uniquindio.agencia.model.AgenciaCliente;
 import co.edu.uniquindio.agencia.model.AgenciaViajes;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -54,7 +55,8 @@ public class VentanaRegistroCliente{
     private Button btnIrMenu;
 
 
-    private final AgenciaViajes agenciaViajes = AgenciaViajes.getInstance();
+    private AgenciaCliente agenciaViajes = new AgenciaCliente();
+
 
     private App main;
 

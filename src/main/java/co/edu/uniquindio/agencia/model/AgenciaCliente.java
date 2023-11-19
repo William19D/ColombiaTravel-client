@@ -32,9 +32,11 @@ public class AgenciaCliente {
                     .tipo("agregarCliente")
                     .contenido(cliente).build() );
             //Obtenemos la respuesta del servidor
-            Object respuesta = in.readObject();
+
+            //Object respuesta = in.readObject();
             //Se imprime la respuesta del servidor. Según la respuesta se podría lanzar una excepción
-            System.out.println(respuesta);
+            System.out.println(cliente.toString());
+            //System.out.println(respuesta);
             //Se cierran los flujos de entrada y de salida para liberar los recursos
             in.close();
             out.close();
