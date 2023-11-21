@@ -91,12 +91,11 @@
          </font>
       </Label>
       <Separator layoutX="637.0" layoutY="152.0" orientation="VERTICAL" prefHeight="428.0" prefWidth="4.0" />
-      <TableView fx:id="tabGuiasRegistrados" layoutX="760.0" layoutY="187.0" prefHeight="268.0" prefWidth="429.0">
+      <TableView fx:id="tabGuiasRegistrados" layoutX="818.0" layoutY="187.0" prefHeight="268.0" prefWidth="265.0">
         <columns>
           <TableColumn fx:id="columNombre" prefWidth="92.0" text="Nombre" />
           <TableColumn fx:id="columnIdentificacion" prefWidth="92.0" text="Identificacion" />
             <TableColumn fx:id="columnExperiencia" prefWidth="77.0" text="Experiencia" />
-            <TableColumn fx:id="columnIdiomas" prefWidth="167.0" text="Idiomas" />
         </columns>
       </TableView>
       <Label layoutX="906.0" layoutY="87.0" text="Guias registrados">
